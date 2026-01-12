@@ -532,3 +532,4 @@ def strategic_move(board, computer="O", human="X"):
 
 if __name__ == "__main__":
     main()
+
