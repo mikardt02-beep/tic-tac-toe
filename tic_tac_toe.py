@@ -67,7 +67,15 @@ def save_game(filename, board, current_player, mode, name1, name2, vs_computer, 
 
 
 def load_game(filename):
-    """Load a saved game state from a binary file."""
+    """
+Loads a previously saved Tic-Tac-Toe game state from a binary file.
+
+Args:
+    filename (str): Path to the binary save file.
+
+Returns:
+    object: The loaded game state.
+"""
     with open(filename, "rb") as f:
         return pickle.load(f)
 
@@ -532,4 +540,5 @@ def strategic_move(board, computer="O", human="X"):
 
 if __name__ == "__main__":
     main()
+
 
